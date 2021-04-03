@@ -1,0 +1,39 @@
+$lightAcornOrange: #fbe7cb;
+$acornOrange: #f3be8cff;
+$olive: #93ab91ff;
+$darkGray: #434343;
+$white: #fff;
+
+.footer {
+  background-color: $olive;
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  position: relative;
+
+  &:after {
+    background-color: lighten($olive, 20%);
+    content: '';
+    height: 75%;
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    top: 12.5%;
+    width: 1px;
+  }
+
+  .hoursLocation {
+    flex: 1;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .footerNav {
+    flex: 1;
+    text-align: center;
+  }
+}

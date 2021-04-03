@@ -1,0 +1,55 @@
+$lightAcornOrange: #fbe7cb;
+$acornOrange: #f3be8cff;
+$olive: #93ab91ff;
+$darkGray: #434343;
+$white: #fff;
+
+.header {
+  background-color: $olive;
+  display: flex;
+
+  .logo {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  .nav {
+    flex: 5;
+  }
+
+  .nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li {
+    flex: 1;
+    font-size: 18px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .navLink {
+    color: $white;
+    display: block;
+    height: 100%;
+    padding: 30px 25px 25px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: lighten($olive, 5%);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+$lightAcornOrange: #fbe7cb;
+$acornOrange: #f3be8cff;
+$olive: #93ab91ff;
+$darkGray: #434343;
+$white: #fff;
+
+.banner {
+  background-color: $acornOrange;
+  color: $white;
+  text-align: center;
+  margin: 0;
+  padding: 15px 20px;
+
+  h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+}

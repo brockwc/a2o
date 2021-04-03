@@ -1,0 +1,93 @@
+$lightAcornOrange: #fbe7cb;
+$acornOrange: #f3be8cff;
+$olive: #93ab91ff;
+$lightOlive: lighten($olive, 30%);
+$darkGray: #434343;
+$gray: lighten($darkGray, 30%);
+$lightGray: lighten($darkGray, 60%);
+$white: #fff;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero {
+  background-position: center -230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 500px;
+  padding: 300px 0 80px;
+  position: relative;
+  text-align: center;
+  
+  &:before {
+    content: '';
+    background: linear-gradient(transparent, #93ab91aa);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.bg-gray {
+  background-color: $darkGray;
+}
+
+.bg-light-gray {
+  background-color: $lightGray;
+}
+
+.bg-olive {
+  background-color: $olive;
+}
+
+.bg-light-olive {
+  background-color: $lightOlive;
+}
+
+.bg-orange {
+  background-color: $acornOrange;
+}
+
+.bg-light-orange {
+  background-color: $lightAcornOrange;
+}
